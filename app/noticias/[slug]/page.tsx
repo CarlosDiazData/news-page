@@ -16,7 +16,7 @@ export default async function Noticia({ params }: { params: Promise<{ slug: stri
             <Navbar />
             <main className="max-w-3xl mx-auto px-4 py-8">
                 {/* Breadcrumb */}
-                <div className="text-sm text-gray-500 mb-4">
+                <div className="text-sm text-white mb-4">
                     <Link href="/" className="hover:text-red-600">Inicio</Link>
                     <span className="mx-2">›</span>
                     <span className="capitalize">{data.category}</span>
@@ -45,7 +45,7 @@ export default async function Noticia({ params }: { params: Promise<{ slug: stri
                 )}
 
                 {/* Contenido */}
-                <div className="prose prose-lg prose-headings:font-black prose-a:text-red-600 max-w-none">
+                <div className="prose prose-lg prose-invert prose-headings:font-black prose-a:text-red-600 max-w-none">
                     <MDXRemote source={content} />
                 </div>
 
