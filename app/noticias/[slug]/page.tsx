@@ -3,8 +3,10 @@ import path from 'path'
 import matter from 'gray-matter'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 
-export default function Noticia({ params }: { params: { slug: string } }) {
-    const file = path.join(process.cwd(), 'content/noticias', `${params.slug}.md`)
+export default async function Noticia({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params  // ← este await es el fix clave
+
+    const file = path.join(process.cwd(), 'content/noticias', `${slug}.md`)
     const raw = fs.readFileSync(file, 'utf8')
     const { data, content } = matter(raw)
 
@@ -24,6 +26,7 @@ export default function Noticia({ params }: { params: { slug: string } }) {
 }
 
 export async function generateStaticParams() {
-    const files = fs.readdirSync(path.join(process.cwd(), 'content/noticias'))
+    const folder = path.join(process.cwd(), 'content/noticias')
+    const files = fs.readdirSync(folder)
     return files.map(f => ({ slug: f.replace('.md', '') }))
 }
