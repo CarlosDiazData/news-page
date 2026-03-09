@@ -76,7 +76,7 @@ export default function Home() {
                   className="w-full h-36 object-cover" />
                 <div className="p-3 flex-1">
                   <span className="text-red-600 text-xs font-bold uppercase">{n.category}</span>
-                  <h3 className="font-bold text-gray-900 leading-snug group-hover:text-red-700 transition-colors mt-1">
+                  <h3 className="font-bold text-white leading-snug group-hover:text-red-700 transition-colors mt-1">
                     {n.title}
                   </h3>
                 </div>
@@ -88,7 +88,7 @@ export default function Home() {
         {/* DIVIDER con etiqueta */}
         <div className="flex items-center gap-3 mb-6">
           <div className="h-1 w-8 bg-red-600 rounded" />
-          <span className="text-sm font-bold text-gray-500 uppercase tracking-widest">Últimas noticias</span>
+          <span className="text-sm font-bold text-white uppercase tracking-widest">Últimas noticias</span>
           <div className="flex-1 h-px bg-gray-200" />
         </div>
 
@@ -100,11 +100,11 @@ export default function Home() {
               <img src={n.image || '/placeholder.jpg'} alt={n.title}
                 className="w-full h-40 object-cover rounded mb-3" />
               <span className="text-red-600 text-xs font-bold uppercase">{n.category}</span>
-              <h3 className="font-bold text-gray-900 leading-snug group-hover:text-red-700 transition-colors mt-1">
+              <h3 className="font-bold text-white leading-snug group-hover:text-red-700 transition-colors mt-1">
                 {n.title}
               </h3>
-              <p className="text-gray-500 text-sm mt-1 line-clamp-2">{n.excerpt}</p>
-              <span className="text-gray-400 text-xs mt-2">
+              <p className="text-white text-sm mt-1 line-clamp-2">{n.excerpt}</p>
+              <span className="text-white text-xs mt-2">
                 {new Date(n.date).toLocaleDateString('es-MX')}
               </span>
             </Link>
