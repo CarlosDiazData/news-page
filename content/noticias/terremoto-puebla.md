@@ -2,7 +2,7 @@
 title: "Sismo de 5.2 sacude la Ciudad de Puebla"
 date: "2026-03-09"
 category: "Nacional"
-image: "/images/sismo-puebla.jpg"
+image: "/images/noticias/sismo-puebla.jpg"
 description: "Un temblor de magnitud 5.2 se registró esta mañana en Puebla, sin reportes de víctimas ni daños mayores."
 ---
 

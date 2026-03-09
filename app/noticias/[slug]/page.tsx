@@ -26,7 +26,7 @@ export default async function Noticia({ params }: { params: Promise<{ slug: stri
                 <span className="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded uppercase">
                     {data.category}
                 </span>
-                <h1 className="text-4xl font-black leading-tight mt-3 mb-2 text-gray-900">
+                <h1 className="text-4xl font-black leading-tight mt-3 mb-2 text-white">
                     {data.title}
                 </h1>
                 <p className="text-xl text-gray-600 mb-4">{data.excerpt}</p>

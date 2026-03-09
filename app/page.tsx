@@ -30,7 +30,7 @@ export default function Home() {
         category: data.category ?? '',
         image: data.image,
         description: data.description,
-        excerpt: data.excerpt ?? content.slice(0, 120).replace(/\n/g, ' ') + '...',
+        excerpt: data.description ?? '',
         slug: file.replace('.md', '')
       } as Noticia
     })
