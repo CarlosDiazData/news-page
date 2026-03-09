@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: CarlosDiazData/news-page  # ← cambia esto
+  branch: main
+
+media_folder: public/images/noticias
+public_folder: /images/noticias
+
+collections:
+  - name: noticias
+    label: Noticias
+    folder: content/noticias
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: Título,     name: title,    widget: string }
+      - { label: Resumen,    name: excerpt,  widget: text }
+      - { label: Categoría,  name: category, widget: select,
+          options: [política, deportes, tecnología, local, cultura] }
+      - { label: Imagen,     name: image,    widget: image }
+      - { label: Fecha,      name: date,     widget: datetime }
+      - { label: Contenido,  name: body,     widget: markdown }
