@@ -29,7 +29,7 @@ export default async function Noticia({ params }: { params: Promise<{ slug: stri
                 <h1 className="text-4xl font-black leading-tight mt-3 mb-2 text-white">
                     {data.title}
                 </h1>
-                <p className="text-xl text-gray-600 mb-4">{data.excerpt}</p>
+                <p className="text-xl text-white mb-4">{data.excerpt}</p>
 
                 {/* Meta */}
                 <div className="flex items-center gap-3 border-y border-gray-200 py-3 mb-6 text-sm text-gray-500">
