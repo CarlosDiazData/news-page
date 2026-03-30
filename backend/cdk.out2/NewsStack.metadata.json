@@ -1,0 +1,230 @@
+{
+  "/NewsStack/ArticlesTable": [
+    {
+      "type": "aws:cdk:hasPhysicalName",
+      "data": {
+        "Ref": "ArticlesTableA36865D8"
+      }
+    }
+  ],
+  "/NewsStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C": [
+    {
+      "type": "aws:cdk:is-custom-resource-handler-singleton",
+      "data": true
+    },
+    {
+      "type": "aws:cdk:is-custom-resource-handler-runtime-family",
+      "data": 2
+    }
+  ],
+  "/NewsStack/ApiEndpoint": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ApiEndpoint"
+    }
+  ],
+  "/NewsStack/FrontendURL": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "FrontendURL"
+    }
+  ],
+  "/NewsStack/DynamoDBTableName": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DynamoDBTableName"
+    }
+  ],
+  "/NewsStack/BootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BootstrapVersion"
+    }
+  ],
+  "/NewsStack/CheckBootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CheckBootstrapVersion"
+    }
+  ],
+  "/NewsStack/ArticlesTable/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ArticlesTableA36865D8"
+    }
+  ],
+  "/NewsStack/LambdaExecutionRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "LambdaExecutionRoleD5C26073"
+    }
+  ],
+  "/NewsStack/ListArticlesHandler/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ListArticlesHandler076E226C"
+    }
+  ],
+  "/NewsStack/GetArticleHandler/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "GetArticleHandler9628AB68"
+    }
+  ],
+  "/NewsStack/FilterByCategoryHandler/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "FilterByCategoryHandler7617239F"
+    }
+  ],
+  "/NewsStack/NewsApi/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "NewsApi637BC34B"
+    }
+  ],
+  "/NewsStack/NewsApi/Account": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "NewsApiAccount6D98C5C5"
+    }
+  ],
+  "/NewsStack/NewsApi/Endpoint": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "NewsApiEndpoint72D6B34B"
+    }
+  ],
+  "/NewsStack/FrontendBucket/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "FrontendBucketEFE2E19C"
+    }
+  ],
+  "/NewsStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536"
+    }
+  ],
+  "/NewsStack/NewsDistribution/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "NewsDistributionEABC19FD"
+    }
+  ],
+  "/NewsStack/LambdaExecutionRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "LambdaExecutionRoleDefaultPolicy6D69732F"
+    }
+  ],
+  "/NewsStack/NewsApi/CloudWatchRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "NewsApiCloudWatchRoleCAB2C2DE"
+    }
+  ],
+  "/NewsStack/NewsApi/Deployment/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "NewsApiDeployment8C13293A5dd8f5dc8c8035d0332f457b98dcb0b9"
+    }
+  ],
+  "/NewsStack/NewsApi/DeploymentStage.prod/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "NewsApiDeploymentStageprod123DF59D"
+    }
+  ],
+  "/NewsStack/FrontendDeployment/AwsCliLayer/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "FrontendDeploymentAwsCliLayer77737BA0"
+    }
+  ],
+  "/NewsStack/FrontendDeployment/CustomResource/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "FrontendDeploymentCustomResource068A52DB"
+    }
+  ],
+  "/NewsStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265"
+    }
+  ],
+  "/NewsStack/NewsApi/Default/OPTIONS/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "NewsApiOPTIONS857A3496"
+    }
+  ],
+  "/NewsStack/NewsApi/Default/articles/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "NewsApiarticles145603AB"
+    }
+  ],
+  "/NewsStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF"
+    }
+  ],
+  "/NewsStack/NewsApi/Default/articles/OPTIONS/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "NewsApiarticlesOPTIONS67B166D6"
+    }
+  ],
+  "/NewsStack/NewsApi/Default/articles/GET/ApiPermission.NewsStackNewsApiC4324699.GET..articles": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "NewsApiarticlesGETApiPermissionNewsStackNewsApiC4324699GETarticlesCB983458"
+    }
+  ],
+  "/NewsStack/NewsApi/Default/articles/GET/ApiPermission.Test.NewsStackNewsApiC4324699.GET..articles": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "NewsApiarticlesGETApiPermissionTestNewsStackNewsApiC4324699GETarticles8111ABD4"
+    }
+  ],
+  "/NewsStack/NewsApi/Default/articles/GET/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "NewsApiarticlesGETCAC30435"
+    }
+  ],
+  "/NewsStack/NewsApi/Default/articles/{id}/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "NewsApiarticlesidBD559791"
+    }
+  ],
+  "/NewsStack/NewsApi/Default/articles/{id}/OPTIONS/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "NewsApiarticlesidOPTIONSB3CE041A"
+    }
+  ],
+  "/NewsStack/NewsApi/Default/articles/{id}/GET/ApiPermission.NewsStackNewsApiC4324699.GET..articles.{id}": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "NewsApiarticlesidGETApiPermissionNewsStackNewsApiC4324699GETarticlesid05BC620B"
+    }
+  ],
+  "/NewsStack/NewsApi/Default/articles/{id}/GET/ApiPermission.Test.NewsStackNewsApiC4324699.GET..articles.{id}": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "NewsApiarticlesidGETApiPermissionTestNewsStackNewsApiC4324699GETarticlesidC0146A14"
+    }
+  ],
+  "/NewsStack/NewsApi/Default/articles/{id}/GET/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "NewsApiarticlesidGET4FB36965"
+    }
+  ]
+}
