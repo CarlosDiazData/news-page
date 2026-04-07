@@ -1,0 +1,42 @@
+flowchart TB
+    subgraph Client_Layer[Client Layer]
+        Browser[Web Browser]
+    end
+
+    subgraph CloudFront[AWS CloudFront CDN]
+        CF[CloudFront Distribution]
+    end
+
+    subgraph S3_Frontend[S3 Frontend]
+        S3Bucket[S3 Bucket]
+    end
+
+    subgraph API_Gateway[API Gateway]
+        APIGW[REST API]
+    end
+
+    subgraph Lambda[AWS Lambda]
+        L1[ListArticlesHandler]
+        L2[GetArticleHandler]
+        L3[FilterByCategoryHandler]
+    end
+
+    subgraph DynamoDB[DynamoDB]
+        DDB[(Articles Table)]
+    end
+
+    Browser --> CF
+    CF -->|static assets| S3Bucket
+    CF -->|API requests| APIGW
+    APIGW -->|/articles| L1
+    APIGW -->|/articles/{id}| L2
+    APIGW -->|/articles?category=| L3
+    L1 --> DDB
+    L2 --> DDB
+    L3 --> DDB
+
+    style S3Bucket fill:#FF9900,color:#000
+    style CF fill:#00A1C9,color:#fff
+    style APIGW fill:#FF9900,color:#000
+    style DDB fill:#3F8624,color:#fff
+    style Browser fill:#4283E4,color:#fff

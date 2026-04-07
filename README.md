@@ -4,50 +4,7 @@ A modern news website inspired by BBC and NYT, built with React frontend and AWS
 
 ## Architecture Overview
 
-```mermaid
-graph TB
-    subgraph "Client Layer"
-        Browser[Web Browser]
-    end
-
-    subgraph "AWS CloudFront CDN"
-        CF[CloudFront Distribution<br/>api.your-domain.com]
-    end
-
-    subgraph "S3 Frontend"
-        S3Bucket[S3 Bucket<br/>news-frontend-assets]
-    end
-
-    subgraph "API Gateway"
-        APIGW[REST API<br/>NewsApi]
-    end
-
-    subgraph "AWS Lambda"
-        L1[ListArticlesHandler]
-        L2[GetArticleHandler]
-        L3[FilterByCategoryHandler]
-    end
-
-    subgraph "DynamoDB"
-        DDB[(Articles Table<br/>Partition: articleId<br/>GSI: categoryIndex)]
-    end
-
-    Browser --> CF
-    CF -->|/static/*| S3Bucket
-    CF -->|/api/*| APIGW
-    APIGW -->|/articles| L1
-    APIGW -->|/articles/{id}| L2
-    APIGW -->|/articles?category=| L3
-    L1 --> DDB
-    L2 --> DDB
-    L3 --> DDB
-
-    style S3Bucket fill:#FF9900,color:#000
-    style CF fill:#00A1C9,color:#fff
-    style APIGW fill:#FF9900,color:#000
-    style DDB fill:#3F8624,color:#fff
-    style Browser fill:#4283E4,color:#fff
-```
+![Architecture Diagram](architecture.svg)
 
 ## Architecture Comparison with BBC/NYT
 

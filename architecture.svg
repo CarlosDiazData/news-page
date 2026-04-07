@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 794.2125000000001 861" width="794.2125000000001" height="861" style="--bg:#1e1e2e;--fg:#cdd6f4;--line:#585b70;--accent:#cba6f7;--muted:#6c7086">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 30%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="4.8" refX="8" refY="2.4" orient="auto">
+    <polygon points="0 0, 8 2.4, 0 4.8" fill="var(--_arrow)" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="4.8" refX="0" refY="2.4" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.4, 8 4.8" fill="var(--_arrow)" />
+  </marker>
+</defs>
+<rect x="200.22500000000005" y="40" width="154.65000000000003" height="112" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+<rect x="200.22500000000005" y="40" width="154.65000000000003" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+<text x="212.22500000000005" y="54" dy="0.35em" font-size="12" font-weight="600" fill="var(--_text-sec)">Client Layer</text>
+<rect x="40.00000000000003" y="196" width="465.1000000000001" height="112" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+<rect x="40.00000000000003" y="196" width="465.1000000000001" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+<text x="52.00000000000003" y="210" dy="0.35em" font-size="12" font-weight="600" fill="var(--_text-sec)">AWS CloudFront CDN</text>
+<rect x="49.93750000000006" y="369" width="140.35000000000002" height="112" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+<rect x="49.93750000000006" y="369" width="140.35000000000002" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+<text x="61.93750000000006" y="383" dy="0.35em" font-size="12" font-weight="600" fill="var(--_text-sec)">S3 Frontend</text>
+<rect x="210.2875" y="369" width="467.00000000000006" height="112" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+<rect x="210.2875" y="369" width="467.00000000000006" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+<text x="222.2875" y="383" dy="0.35em" font-size="12" font-weight="600" fill="var(--_text-sec)">API Gateway</text>
+<rect x="144.36250000000007" y="542" width="609.85" height="112" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+<rect x="144.36250000000007" y="542" width="609.85" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+<text x="156.36250000000007" y="556" dy="0.35em" font-size="12" font-weight="600" fill="var(--_text-sec)">AWS Lambda</text>
+<rect x="186.26250000000002" y="698" width="501.75000000000006" height="123" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+<rect x="186.26250000000002" y="698" width="501.75000000000006" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+<text x="198.26250000000002" y="712" dy="0.35em" font-size="12" font-weight="600" fill="var(--_text-sec)">DynamoDB</text>
+<polyline points="277.55000000000007,132 277.55000000000007,252" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="277.55000000000007,288 277.55000000000007,308 120.11250000000007,308 120.11250000000007,425" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="277.55000000000007,288 277.55000000000007,308 434.98750000000007,308 434.98750000000007,425" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="434.98750000000007,461 434.98750000000007,481 250.28750000000002,481 250.28750000000002,598" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="434.98750000000007,461 434.98750000000007,598" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="434.98750000000007,461 434.98750000000007,481 633.9875000000001,481 633.9875000000001,598" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="250.28750000000002,634 250.28750000000002,777.5 382.23750000000007,777.5" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="434.98750000000007,634 434.98750000000007,777.5 382.23750000000007,777.5" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="633.9875000000001,634 633.9875000000001,777.5 514.3375000000001,777.5" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<rect x="74.93250000000006" y="343" width="90.36" height="27" rx="4" ry="4" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="0.5" />
+<text x="120.11250000000007" y="356.5" text-anchor="middle" dy="0.35em" font-size="11" font-weight="400" fill="var(--_text-muted)">static assets</text>
+<rect x="392.6675000000001" y="343" width="84.64" height="27" rx="4" ry="4" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="0.5" />
+<text x="434.98750000000007" y="356.5" text-anchor="middle" dy="0.35em" font-size="11" font-weight="400" fill="var(--_text-muted)">API requests</text>
+<rect x="216.5475" y="516" width="67.48" height="27" rx="4" ry="4" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="0.5" />
+<text x="250.28750000000002" y="529.5" text-anchor="middle" dy="0.35em" font-size="11" font-weight="400" fill="var(--_text-muted)">/articles</text>
+<rect x="386.94750000000005" y="516" width="96.08" height="27" rx="4" ry="4" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="0.5" />
+<text x="434.98750000000007" y="529.5" text-anchor="middle" dy="0.35em" font-size="11" font-weight="400" fill="var(--_text-muted)">/articles/{id}</text>
+<rect x="571.6475" y="516" width="124.68" height="27" rx="4" ry="4" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="0.5" />
+<text x="633.9875000000001" y="529.5" text-anchor="middle" dy="0.35em" font-size="11" font-weight="400" fill="var(--_text-muted)">/articles?category=</text>
+<rect x="222.22500000000008" y="96" width="110.65" height="36" rx="0" ry="0" fill="#4283E4" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="179.32500000000005" y="252" width="196.45000000000002" height="36" rx="0" ry="0" fill="#00A1C9" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="71.93750000000006" y="425" width="96.35000000000001" height="36" rx="0" ry="0" fill="#FF9900" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="390.38750000000005" y="425" width="89.2" height="36" rx="0" ry="0" fill="#FF9900" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="166.3625" y="598" width="167.85000000000002" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="358.2125000000001" y="598" width="153.55" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="535.7625" y="598" width="196.45000000000002" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="382.23750000000007" y="761" width="132.10000000000002" height="33" fill="#3F8624" stroke="none" />
+<line x1="382.23750000000007" y1="761" x2="382.23750000000007" y2="794" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<line x1="514.3375000000001" y1="761" x2="514.3375000000001" y2="794" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<ellipse cx="448.2875000000001" cy="794" rx="66.05000000000001" ry="7" fill="#3F8624" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<ellipse cx="448.2875000000001" cy="761" rx="66.05000000000001" ry="7" fill="#3F8624" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<text x="277.55000000000007" y="114" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="#fff">Web Browser</text>
+<text x="277.55000000000007" y="270" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="#fff">CloudFront Distribution</text>
+<text x="120.11250000000007" y="443" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="#000">S3 Bucket</text>
+<text x="434.98750000000007" y="443" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="#000">REST API</text>
+<text x="250.28750000000002" y="616" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">ListArticlesHandler</text>
+<text x="434.98750000000007" y="616" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">GetArticleHandler</text>
+<text x="633.9875000000001" y="616" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">FilterByCategoryHandler</text>
+<text x="448.2875000000001" y="777.5" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="#fff">Articles Table</text>
+</svg>
