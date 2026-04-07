@@ -24,6 +24,10 @@ scripts/node_modules/
 *.swp
 *.swo
 
+# Agents
+.agents/
+skills-lock.json
+
 # OS
 .DS_Store
 Thumbs.db
